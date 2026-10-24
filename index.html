@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <meta name="theme-color" content="#061e16">
+  <meta name="description"
+    content="Auspicious Royal Wedding Invitation of Venkata Saikumar & Rohini Varalakshmi. Haldi & Sangeeth: 19 Nov, Vizag. Subha Muhurtham: 20 Nov, Vizag. Sri Satyanarayana Swamy Vratham & Festive Lunch: 22 Nov, Rajahmundry.">
+  <meta property="og:title" content="Venkata Saikumar ♥ Rohini Varalakshmi — Royal Wedding Invitation">
+  <meta property="og:description"
+    content="Join us in celebrating our Haldi, Sangeeth, Subha Vivaham, and Sri Satyanarayana Swamy Vratham with Festive Wedding Lunch.">
+  <meta property="og:image" content="couple.jpg">
+  <meta property="og:type" content="website">
+  <title>Venkata Saikumar ♥ Rohini Varalakshmi — Royal Wedding Celebrations</title>
+
+  <!-- Google Fonts: Traditional Royal Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Marcellus&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="seal-locked">
+
+  <!-- Background Music Player (Visa Vintara Saradaga) -->
+  <audio id="weddingAudio" src="visa_vintara_saradaga.mp3" preload="auto" loop></audio>
+
+  <!-- Floating Sacred Akshata & Petal Physics Canvas -->
+  <canvas id="petalsCanvas" class="petals-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       1. ROYAL EMERALD & GOLD SEAL COVER SCREEN (MATCHING INVITESTORY REEL)
+       ========================================================================= -->
+  <div class="emerald-seal-screen" id="sealScreen" aria-modal="true" role="dialog"
+    aria-label="Royal Wedding Invitation Seal">
+
+    <!-- Intricate Golden Mandala Background Graphic -->
+    <div class="mandala-bg-ornament" aria-hidden="true">
+      <svg viewBox="0 0 500 500" class="mandala-svg">
+        <circle cx="250" cy="250" r="230" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="1.5"
+          stroke-dasharray="4, 4" />
+        <circle cx="250" cy="250" r="200" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="1.8" />
+        <circle cx="250" cy="250" r="160" fill="none" stroke="rgba(212, 175, 55, 0.3)" stroke-width="1.2"
+          stroke-dasharray="2, 6" />
+        <circle cx="250" cy="250" r="120" fill="none" stroke="rgba(212, 175, 55, 0.5)" stroke-width="2" />
+
+        <!-- Sacred 8-Point Star Mandala Patterns -->
+        <g stroke="rgba(212, 175, 55, 0.45)" stroke-width="1.2" fill="none">
+          <path d="M 250 50 L 250 450 M 50 250 L 450 250 M 108 108 L 392 392 M 108 392 L 392 108" />
+          <path d="M 250 70 Q 280 160 250 250 Q 220 160 250 70 Z" />
+          <path d="M 250 250 Q 280 340 250 430 Q 220 340 250 250 Z" />
+          <path d="M 70 250 Q 160 280 250 250 Q 160 220 70 250 Z" />
+          <path d="M 250 250 Q 340 280 430 250 Q 340 220 250 250 Z" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Hanging Mango Leaves & Jasmine Toranam -->
+    <div class="seal-top-toran" aria-hidden="true">
+      <div class="toran-leaf-row">
+        <span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span>
+      </div>
+      <div class="toran-garland-row">
+        <span class="m-gold">🌼</span>
+        <span class="m-orange">🏵️</span>
+        <span class="m-jasmine">🌸</span>
+        <span class="m-orange">🏵️</span>
+        <span class="m-gold">🌼</span>
+      </div>
+    </div>
+
+    <div class="seal-content-card">
+      <div class="seal-gold-border-inner"></div>
+
+      <!-- Sacred Invocations -->
+      <p class="seal-shloka">॥ శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు ॥</p>
+
+      <span class="seal-kicker">WEDDING INVITATION</span>
+
+      <!-- Names in Royal Gold Typography -->
+      <div class="seal-names-wrap">
+        <h1 class="seal-name-groom">Venkata Saikumar</h1>
+        <div class="seal-ampersand-row">
+          <span class="amp-line"></span>
+          <span class="amp-symbol">&amp;</span>
+          <span class="amp-line"></span>
+        </div>
+        <h1 class="seal-name-bride">Rohini Varalakshmi</h1>
+      </div>
+
+      <p class="seal-subline">Together with their families, invite you to celebrate their sacred union</p>
+
+      <!-- Royal Golden Wax Seal Button (Exact InviteStory Style) -->
+      <div class="wax-seal-button" id="waxSealBtn" role="button" tabindex="0"
+        aria-label="Tap the royal seal to open wedding invitation">
+        <div class="seal-orbit-halo"></div>
+        <div class="seal-outer-gold-disc">
+          <div class="seal-inner-medallion">
+            <span class="seal-monogram-letters">RS</span>
+            <span class="seal-sparkle-dot">✦</span>
+          </div>
+        </div>
+        <div class="seal-pulse-glow"></div>
+      </div>
+
+      <p class="tap-seal-instruction">TAP THE SEAL TO OPEN</p>
+
+      <!-- Events Preview Ribbon -->
+      <div class="seal-events-preview">
+        <div class="preview-item">
+          <strong>19 Nov 2026</strong>
+          <span>Haldi &amp; Sangeeth</span>
+        </div>
+        <div class="preview-divider">✦</div>
+        <div class="preview-item">
+          <strong>20 Nov 2026</strong>
+          <span>Subha Muhurtham</span>
+        </div>
+        <div class="preview-divider">✦</div>
+        <div class="preview-item">
+          <strong>22 Nov 2026</strong>
+          <span>Vratham &amp; Lunch</span>
+        </div>
+      </div>
+
+      <small class="seal-tap-subtext">తెరవడానికి సీల్‌ను తాకండి &middot; With Auspicious Music</small>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. ROYAL EMERALD & GOLD MOBILE-CENTERED INVITATION CARD
+       ========================================================================= -->
+  <div class="emerald-viewport-container">
+
+    <!-- Top Toran Garland -->
+    <header class="emerald-toran-header" aria-hidden="true">
+      <div class="toran-leaves-strip">
+        <span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span><span>🍃</span>
+      </div>
+      <div class="toran-flowers-strip">
+        <span class="fl-gold">🏵️</span>
+        <span class="fl-leaf">🍃</span>
+        <span class="fl-orange">🌼</span>
+        <span class="fl-jasmine">🌸</span>
+        <span class="fl-orange">🌼</span>
+        <span class="fl-leaf">🍃</span>
+        <span class="fl-gold">🏵️</span>
+      </div>
+    </header>
+
+    <!-- Top Brand Bar with RS Monogram & Soundwave Pill -->
+    <div class="emerald-top-bar">
+      <div class="top-brand-info">
+        <span class="top-brand-crest">RS</span>
+        <div class="top-brand-text">
+          <strong>Venkata Saikumar ♥ Rohini</strong>
+          <small>Wedding Celebrations</small>
+        </div>
+      </div>
+
+      <button class="emerald-music-pill" id="musicToggle" aria-label="Toggle Auspicious Indian Flute Music"
+        title="Play Auspicious Music">
+        <span class="pill-icon" id="musicIcon">🎵</span>
+        <span class="pill-wave" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- MAIN INVITATION CONTENT -->
+    <main class="invitation-main-scroll" id="mainContent">
+
+      <!-- =====================================================================
+           HERO SECTION: INVOCATIONS & ROYAL COUPLE PORTRAIT
+           ===================================================================== -->
+      <section class="emerald-section hero-section" id="home">
+
+        <div class="divine-shlokas-box">
+          <p class="shloka-sanskrit">॥ श्री गणेशाय नमः ॥ &nbsp; ✦ &nbsp; ॥ श्री वेङ्कटेशाय नमः ॥</p>
+          <p class="shloka-telugu">॥ శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు ॥</p>
+        </div>
+
+        <!-- Divine Golden Ganesha with Prabhavali Halo -->
+        <div class="divine-ganesha-emblem" aria-hidden="true">
+          <svg viewBox="0 0 100 100" class="ganesha-svg">
+            <defs>
+              <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF5C0" />
+                <stop offset="40%" stop-color="#E5BE62" />
+                <stop offset="70%" stop-color="#C59634" />
+                <stop offset="100%" stop-color="#8C6514" />
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="none" stroke="url(#goldShine)" stroke-width="1.2"
+              stroke-dasharray="2, 3" />
+            <circle cx="50" cy="50" r="41" fill="none" stroke="url(#goldShine)" stroke-width="0.8" />
+            <path d="M 28 80 C 35 73, 45 74, 50 78 C 55 74, 65 73, 72 80 C 65 83, 50 85, 28 80 Z"
+              fill="url(#goldShine)" />
+            <path d="M 43 23 L 50 14 L 57 23 L 54 28 L 46 28 Z" fill="url(#goldShine)" />
+            <path d="M 42 32 C 30 31, 24 38, 28 47 C 32 52, 39 49, 43 45" fill="none" stroke="url(#goldShine)"
+              stroke-width="2.2" stroke-linecap="round" />
+            <path d="M 58 32 C 70 31, 76 38, 72 47 C 68 52, 61 49, 57 45" fill="none" stroke="url(#goldShine)"
+              stroke-width="2.2" stroke-linecap="round" />
+            <path d="M 44 32 C 50 30, 50 30, 56 32 C 58 38, 56 46, 52 52 C 48 58, 49 66, 55 67 C 59 67, 62 63, 60 59"
+              fill="none" stroke="url(#goldShine)" stroke-width="2.8" stroke-linecap="round" />
+            <circle cx="61.5" cy="58" r="2.8" fill="url(#goldShine)" />
+            <circle cx="50" cy="34" r="1.2" fill="#E11D48" />
+          </svg>
+        </div>
+
+        <p class="invitation-intro-text">
+          TOGETHER WITH OUR FAMILIES, WE CORDIALLY INVITE YOU TO CELEBRATE THE SACRED WEDDING OF
+        </p>
+
+        <!-- Ornate Golden Jharokha Arch Frame (Saikumar & Rohini Real Photograph) -->
+        <div class="royal-couple-portrait-wrapper">
+          <div class="jharokha-arch-crown">
+            <span class="crown-motif">👑</span>
+          </div>
+
+          <div class="jharokha-portrait-frame">
+            <div class="frame-filigree-border"></div>
+            <!-- REAL PHOTOGRAPH OF SAIKUMAR & ROHINI -->
+            <img src="couple.jpg" alt="Venkata Saikumar and Rohini Varalakshmi — Bride & Groom"
+              class="real-couple-photo" id="couplePhoto" loading="eager">
+            <div class="photo-monogram-badge">
+              <span>RS</span>
+            </div>
+          </div>
+
+          <div class="portrait-garland-trim" aria-hidden="true">
+            <span>🌼</span><span>🌿</span><span>🌸</span><span>🌿</span><span>🌼</span>
+          </div>
+        </div>
+
+        <!-- Royal Names Display -->
+        <div class="royal-names-container">
+          <div class="name-block groom-block">
+            <span class="title-prefix">Chi.</span>
+            <h1 class="person-full-name">Venkata Saikumar</h1>
+            <p class="family-descent">Son of Smt. &amp; Sri Chinni Family</p>
+          </div>
+
+          <div class="weds-script-divider">
+            <span class="script-line"></span>
+            <span class="weds-calligraphy">weds</span>
+            <span class="script-line"></span>
+          </div>
+
+          <div class="name-block bride-block">
+            <span class="title-prefix">Chi. La. Sow.</span>
+            <h1 class="person-full-name">Rohini Varalakshmi</h1>
+            <p class="family-descent">Daughter of Smt. &amp; Sri Family</p>
+          </div>
+        </div>
+
+        <p class="sacred-union-tagline">
+          “Two Souls Bound by Destiny, United in Sacred Matrimony for Seven Lifetimes”
+        </p>
+
+        <!-- Live Muhurtham Countdown -->
+        <div class="emerald-countdown-card" id="countdownBox">
+          <span class="cd-title-badge">⏳ COUNTDOWN TO SUBHA MUHURTHAM</span>
+          <div class="cd-units-flex">
+            <div class="cd-slot">
+              <strong id="cdDays">00</strong>
+              <small>Days</small>
+            </div>
+            <div class="cd-dots">:</div>
+            <div class="cd-slot">
+              <strong id="cdHours">00</strong>
+              <small>Hours</small>
+            </div>
+            <div class="cd-dots">:</div>
+            <div class="cd-slot">
+              <strong id="cdMins">00</strong>
+              <small>Mins</small>
+            </div>
+            <div class="cd-dots">:</div>
+            <div class="cd-slot">
+              <strong id="cdSecs">00</strong>
+              <small>Secs</small>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           EVENT 1: HALDI & SANGEETH (PASUPU VEDUKA & MUSICAL NIGHT)
+           ===================================================================== -->
+      <section class="emerald-section celebration-event-card haldi-sangeeth-card" id="haldi-sangeeth">
+        <div class="event-card-surface">
+
+          <div class="event-header-pill haldi-pill">
+            <span class="pill-dot">🌼</span>
+            <span>PASUPU &middot; SANGEETH VEDUKA</span>
+          </div>
+
+          <h2 class="event-card-title">Haldi &amp; Sangeeth Celebrations</h2>
+          <p class="event-card-telugu">పసుపు వేడుక &middot; సంగీత్ నైట్</p>
+          <p class="event-card-lead">
+            Begin the joyous celebrations with fragrant turmeric, playful music, family dance, and radiant celebrations
+            by the beach!
+          </p>
+
+          <!-- Date Highlight Box -->
+          <div class="event-date-display haldi-date-display">
+            <span class="date-weekday">THURSDAY</span>
+            <div class="date-large-day">19</div>
+            <span class="date-month-year">NOVEMBER 2026</span>
+            <span class="date-ritual-context">Auspicious Karthika Masam</span>
+          </div>
+
+          <!-- Dual Sub-Events: Haldi (Morning) & Sangeeth (Night) -->
+          <div class="haldi-sangeeth-schedule-row">
+            <!-- Haldi Morning -->
+            <div class="sub-schedule-item haldi-item">
+              <div class="sub-schedule-header">
+                <span class="sub-icon">🌿</span>
+                <strong>Haldi Ceremony (మంగళ స్నానం)</strong>
+              </div>
+              <span class="sub-time-badge">Morning Celebration</span>
+              <p>Traditional anointing with pure turmeric (pasupu), sandalwood, and sacred bath with family blessings.
+              </p>
+            </div>
+
+            <!-- Sangeeth Night -->
+            <div class="sub-schedule-item sangeeth-item">
+              <div class="sub-schedule-header">
+                <span class="sub-icon">🎶</span>
+                <strong>Sangeeth &amp; Musical Night (సంగీత్)</strong>
+              </div>
+              <span class="sub-time-badge">Evening / Night Celebration</span>
+              <p>A magical evening of music, dance performances, joyous laughter, and dinner by the waves.</p>
+            </div>
+          </div>
+
+          <!-- Venue Details: Ambica Sea Green -->
+          <div class="event-venue-info-box">
+            <div class="venue-symbol">🌊</div>
+            <div class="venue-details">
+              <strong class="venue-title">Ambica Sea Green</strong>
+              <p class="venue-location">Beach Road, Visakhapatnam, Andhra Pradesh</p>
+              <span class="venue-attire">💛 Haldi: Festive Yellow / Gold &middot; 💃 Sangeeth: Glamorous Indian</span>
+            </div>
+          </div>
+
+          <!-- Event Actions -->
+          <div class="event-actions-flex">
+            <a href="https://maps.app.goo.gl/HKqPGgwte3YvETWB6" target="_blank" rel="noopener"
+              class="event-btn primary-map-btn">
+              <span>📍 Directions to Ambica Sea Green</span>
+              <span class="external-icon">↗</span>
+            </a>
+
+            <button class="event-btn outline-cal-btn" id="calendarHaldiBtn">
+              <span>📅 Add Haldi &amp; Sangeeth to Calendar</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           EVENT 2: SUBHA VIVAHAM (THE SACRED WEDDING CEREMONY)
+           ===================================================================== -->
+      <section class="emerald-section celebration-event-card vivaham-card" id="wedding">
+        <div class="event-card-surface">
+
+          <div class="event-header-pill vivaham-pill">
+            <span class="pill-dot">🪔</span>
+            <span>SUBHA VIVAHAM &middot; శుభ వివాహం</span>
+          </div>
+
+          <h2 class="event-card-title">The Sacred Wedding Ceremony</h2>
+          <p class="event-card-telugu">కల్యాణ మహోత్సవం &middot; సుముహూర్తం</p>
+          <p class="event-sacred-mantra">
+            ॥ माङ्गल्यं तन्तुनानेन मम जीवनहेतुना । कण्ठे बध्नामि सुभगे सञ्जीव शरदः शतम् ॥
+          </p>
+
+          <!-- Date Highlight Box -->
+          <div class="event-date-display vivaham-date-display">
+            <span class="date-weekday">FRIDAY</span>
+            <div class="date-large-day">20</div>
+            <span class="date-month-year">NOVEMBER 2026</span>
+            <span class="date-ritual-context">Karthika Masam &middot; Sukla Paksham</span>
+          </div>
+
+          <!-- Muhurtham Golden Spotlight -->
+          <div class="muhurtham-gold-spotlight">
+            <span class="spotlight-header">AUSPICIOUS SUMUHURTHAM</span>
+            <div class="spotlight-time-wrap">
+              <span class="spark-star">✨</span>
+              <strong class="muhurtham-exact-time">9:53 PM</strong>
+              <span class="spark-star">✨</span>
+            </div>
+            <span class="spotlight-subtext">Night &middot; Sumuhurtha Lagna (జీలకర్ర బెల్లం)</span>
+          </div>
+
+          <!-- Venue Details: TTD Kalyana Mandapam -->
+          <div class="event-venue-info-box">
+            <div class="venue-symbol">🛕</div>
+            <div class="venue-details">
+              <strong class="venue-title">TTD Kalyana Mandapam</strong>
+              <p class="venue-location">MVP Colony, Visakhapatnam, Andhra Pradesh</p>
+              <span class="venue-attire">🥻 Traditional Silk / Festive Attire (Pattu Sarees, Kurta &amp; Dhoti)</span>
+            </div>
+          </div>
+
+          <!-- Event Actions -->
+          <div class="event-actions-flex">
+            <a href="https://www.google.com/maps/search/?api=1&query=TTD+Kalyana+Mandapam+MVP+Colony+Visakhapatnam"
+              target="_blank" rel="noopener" class="event-btn primary-map-btn">
+              <span>📍 Directions to TTD Kalyana Mandapam</span>
+              <span class="external-icon">↗</span>
+            </a>
+
+            <button class="event-btn outline-cal-btn" id="calendarMuhurthamBtn">
+              <span>📅 Add Muhurtham to Calendar</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           EVENT 3: SRI SATYANARAYANA SWAMY VRATHAM & FESTIVE WEDDING LUNCH
+           ===================================================================== -->
+      <section class="emerald-section celebration-event-card vratham-lunch-card" id="vratham">
+        <div class="event-card-surface">
+
+          <div class="event-header-pill vratham-pill">
+            <span class="pill-dot">🪔</span>
+            <span>DIVINE VRATHAM &amp; WEDDING LUNCH</span>
+          </div>
+
+          <h2 class="event-card-title">Sri Satyanarayana Swamy Vratham &amp; Festive Lunch</h2>
+          <p class="event-card-telugu">శ్రీ సత్యనారాయణ స్వామి వ్రతం &amp; కల్యాణ విందు భోజనం</p>
+          <p class="event-sacred-mantra">॥ ॐ श्री सत्यनारायणाय नमः ॥</p>
+
+          <p class="event-card-lead">
+            To invoke divine bliss, eternal harmony, and sacred blessings for our married life, our families will
+            perform the sacred Vratham, followed by a grand traditional wedding feast.
+          </p>
+
+          <!-- Date Highlight Box -->
+          <div class="event-date-display vratham-date-display">
+            <span class="date-weekday">SUNDAY</span>
+            <div class="date-large-day">22</div>
+            <span class="date-month-year">NOVEMBER 2026</span>
+            <span class="date-ritual-context">Auspicious Morning Pooja &amp; Afternoon Feast</span>
+          </div>
+
+          <!-- Vratham Schedule & Lunch Feature -->
+          <div class="haldi-sangeeth-schedule-row">
+
+            <div class="sub-schedule-item">
+              <div class="sub-schedule-header">
+                <span class="sub-icon">🪔</span>
+                <strong>Auspicious Vratham Pooja</strong>
+              </div>
+              <span class="sub-time-badge">Morning Ceremony</span>
+              <p>Sacred Katha Shravanam, Kalasha Sthapana &amp; Mahamangala Harathi invoking Lord Satyanarayana's divine
+                grace.</p>
+            </div>
+
+            <div class="sub-schedule-item feast-banana-item">
+              <div class="sub-schedule-header">
+                <span class="sub-icon">🍃</span>
+                <strong>Festive Wedding Lunch (విందు భోజనం)</strong>
+              </div>
+              <span class="feast-tag">Traditional Kalyana Bhojanam</span>
+              <p>Sumptuous Andhra Feast served with love on fresh banana leaves (అరటి ఆకు భోజనం) with Godavari
+                delicacies &amp; Satyanarayana Swamy Mahaprasadam.</p>
+            </div>
+
+          </div>
+
+          <!-- Venue Details: Sri Sai Krishna Mandir -->
+          <div class="event-venue-info-box">
+            <div class="venue-symbol">🛕</div>
+            <div class="venue-details">
+              <strong class="venue-title">Sri Sai Krishna Mandir</strong>
+              <p class="venue-location">2-60-5, Sambhu Nagar, Alcot Gardens, Rajamahendravaram (Rajahmundry), Andhra
+                Pradesh 533101</p>
+              <span class="venue-attire">🍽️ Traditional Wedding Feast &amp; Mahaprasadam</span>
+            </div>
+          </div>
+
+          <!-- Event Actions -->
+          <div class="event-actions-flex">
+            <a href="https://maps.app.goo.gl/oMhQ2octoprPrzRn9" target="_blank" rel="noopener"
+              class="event-btn primary-map-btn">
+              <span>📍 Directions to Sri Sai Krishna Mandir</span>
+              <span class="external-icon">↗</span>
+            </a>
+
+            <button class="event-btn outline-cal-btn" id="calendarVrathamBtn">
+              <span>📅 Add Vratham &amp; Lunch to Calendar</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           SACRED TELUGU RITUALS (ఆచారాలు & సంప్రదాయాలు)
+           ===================================================================== -->
+      <section class="emerald-section rituals-guide-section" id="rituals">
+        <div class="section-kicker-gold">TELUGU VIVAHA VEDUKA &middot; ఆచారాలు &amp; సంప్రదాయాలు</div>
+        <h2 class="emerald-section-title">Sacred Wedding Traditions</h2>
+        <p class="rituals-intro-text">
+          Every sacred ritual in our Telugu Vivaham carries profound timeless meaning, uniting two families and two
+          souls for seven lifetimes.
+        </p>
+
+        <div class="rituals-stack">
+          <div class="ritual-box">
+            <span class="ritual-index">01</span>
+            <div class="ritual-content">
+              <strong>Mangala Snanam &amp; Pasupu (మంగళ స్నానం)</strong>
+              <p>Purification with pure turmeric, fragrant holy waters, and sandalwood for divine grace and golden
+                radiance.</p>
+            </div>
+          </div>
+
+          <div class="ritual-box">
+            <span class="ritual-index">02</span>
+            <div class="ritual-content">
+              <strong>Gauri Pooja &amp; Kanyadaanam (కన్యాదానం)</strong>
+              <p>Invoking Goddess Gauri, followed by parents lovingly placing the bride’s hand into the groom’s hand as
+                Lord Narayana.</p>
+            </div>
+          </div>
+
+          <div class="ritual-box highlighted-ritual-box">
+            <span class="ritual-index">03</span>
+            <div class="ritual-content">
+              <strong>Jeelakarra Bellam &middot; 9:53 PM (జీలకర్ర బెల్లం)</strong>
+              <p>At the exact Muhurtham, cumin and jaggery paste are placed on each other’s heads, symbolizing an
+                eternal, inseparable union.</p>
+            </div>
+          </div>
+
+          <div class="ritual-box">
+            <span class="ritual-index">04</span>
+            <div class="ritual-content">
+              <strong>Mangalyadharana &amp; Saptapadi (మాంగళ్యధారణ)</strong>
+              <p>Tying the sacred golden Mangalasutrams with three eternal knots, followed by seven sacred steps around
+                the holy fire.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           OUR STORY / BANDHAM (బంధం)
+           ===================================================================== -->
+      <section class="emerald-section story-section" id="story">
+        <div class="section-kicker-gold">A BEAUTIFUL JOURNEY &middot; ప్రేమ బంధం</div>
+        <h2 class="emerald-section-title">Our Story &middot; Bandham</h2>
+
+        <div class="story-vertical-steps">
+          <div class="step-row">
+            <div class="step-num-badge">01</div>
+            <div class="step-card-body">
+              <h4>Destined Paths Crossed</h4>
+              <p>With the blessings of our elders, our families met. What began with warm conversations blossomed into
+                deep mutual respect, understanding, and friendship.</p>
+            </div>
+          </div>
+
+          <div class="step-row">
+            <div class="step-num-badge">02</div>
+            <div class="step-card-body">
+              <h4>Two Hearts, One Rhythm</h4>
+              <p>Sharing values, dreams for tomorrow, and laughter, we realized that God had woven our lives together
+                into a harmonious lifelong tapestry.</p>
+            </div>
+          </div>
+
+          <div class="step-row">
+            <div class="step-num-badge">03</div>
+            <div class="step-card-body">
+              <h4>Our Forever Begins</h4>
+              <p>Surrounded by our loved ones and divine grace, we celebrate our wedding ceremonies to step into a
+                blessed, joy-filled lifetime together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           AASHIRWADAM (GUEST BLESSINGS WALL)
+           ===================================================================== -->
+      <section class="emerald-section blessings-section" id="blessings">
+        <div class="section-kicker-gold">BESTOW YOUR DIVINE BLESSINGS &middot; ఆశీర్వదించండి</div>
+        <h2 class="emerald-section-title">Aashirwadam &middot; Blessings Wall</h2>
+        <p class="blessings-intro-text">
+          Your heartfelt prayers and warm wishes (ఆశీస్సులు) are the divine foundation upon which our new journey will
+          be built.
+        </p>
+
+        <!-- Guest Blessing Form -->
+        <form id="blessingForm" class="emerald-blessing-form">
+          <div class="form-input-group">
+            <label for="guestName">Your Full Name <span class="asterisk">*</span></label>
+            <input type="text" id="guestName" name="name" required maxlength="80"
+              placeholder="e.g. Chinni Krishna Rao Garu">
+          </div>
+
+          <div class="form-input-group">
+            <label for="guestRelation">Relationship</label>
+            <select id="guestRelation" name="relation">
+              <option value="Family Elder">Family Elder &middot; పెద్దలు</option>
+              <option value="Family Member">Family Member &middot; కుటుంబ సభ్యులు</option>
+              <option value="Friend">Dear Friend &middot; స్నేహితులు</option>
+              <option value="Well-wisher" selected>Well-wisher &middot; ఆప్తమిత్రులు</option>
+            </select>
+          </div>
+
+          <div class="form-input-group">
+            <label for="guestMessage">Your Blessing Message <span class="asterisk">*</span></label>
+            <textarea id="guestMessage" name="message" rows="3" required maxlength="500"
+              placeholder="May Lord Venkateswara &amp; Sri Satyanarayana Swamy shower Saikumar &amp; Rohini with eternal health, happiness, and prosperity..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-blessing-button">
+            <span>🌸 Bestow Blessings ✦ ఆశీర్వదించండి</span>
+          </button>
+        </form>
+
+        <p id="formStatus" class="form-status-message" role="status" aria-live="polite"></p>
+
+        <!-- Live Blessings Stream -->
+        <div class="blessings-feed-container" id="blessingsFeed">
+          <div class="blessing-card-item">
+            <div class="card-item-top">
+              <strong>Subba Rao &amp; Sarada Garu</strong>
+              <span class="relation-pill">Family Elders</span>
+            </div>
+            <p>“॥ అయుష్మాన్ భవ । సౌభాగ్యవతీ భవ ॥ May Lord Venkateswara and Goddess Padmavathi shower Saikumar and Rohini
+              with lifelong health, prosperity, and joy.”</p>
+            <span class="blessing-timestamp">Visakhapatnam &middot; 24 Oct 2026</span>
+          </div>
+
+          <div class="blessing-card-item">
+            <div class="card-item-top">
+              <strong>Kalyan &amp; Ananya</strong>
+              <span class="relation-pill">Dear Friends</span>
+            </div>
+            <p>“Heartiest congratulations to Saikumar &amp; Rohini! Can’t wait for the Haldi &amp; Sangeeth by the
+              beach, the grand Vivaham in Vizag, and the delicious Vratham lunch in Rajahmundry!”</p>
+            <span class="blessing-timestamp">Hyderabad &middot; 24 Oct 2026</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           FOOTER
+           ===================================================================== -->
+      <footer class="emerald-footer">
+        <div class="footer-gold-kolam" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="56" height="56" fill="none" stroke="#d4af37">
+            <circle cx="50" cy="50" r="45" stroke-width="1" stroke-dasharray="3, 3" />
+            <circle cx="50" cy="50" r="35" stroke-width="1.5" />
+            <polygon points="50,15 85,50 50,85 15,50" stroke="#f3e5ab" stroke-width="1" />
+            <circle cx="50" cy="50" r="10" stroke-width="2" />
+            <circle cx="50" cy="50" r="3" fill="#d4af37" />
+          </svg>
+        </div>
+
+        <p class="footer-shloka-verse">॥ सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके । शरण्ये त्र्यम्बके गौरि नारायणि
+          नमोऽस्तु ते ॥</p>
+        <p class="footer-shanti">॥ ॐ శాంతిః శాంతిః శాంతిః ॥</p>
+
+        <div class="footer-gratitude-wrap">
+          <p class="gratitude-text">With love, reverence &amp; gratitude</p>
+          <h3 class="footer-couple-title">Venkata Saikumar <span>♥</span> Rohini Varalakshmi</h3>
+          <p class="footer-families-mention">Chinni &amp; Extended Families</p>
+        </div>
+
+        <div class="footer-dates-badge">
+          <span>19 Nov: Haldi &amp; Sangeeth &middot; Vizag</span>
+          <br>
+          <span>20 Nov: Subha Muhurtham &middot; Vizag</span>
+          <br>
+          <span>22 Nov: Vratham &amp; Lunch &middot; Rajahmundry</span>
+        </div>
+
+        <button class="lock-seal-again-btn" id="reopenSealBtn">
+          <span>👑 View Royal Seal Again</span>
+        </button>
+      </footer>
+
+    </main>
+
+    <!-- =========================================================================
+         FLOATING STICKY BOTTOM DOCK (INVITESTORY SIGNATURE)
+         ========================================================================= -->
+    <aside class="floating-dock-bar" aria-label="Quick Actions">
+      <!-- Save Date Button -->
+      <button class="dock-action-btn" id="dockSaveBtn" aria-label="Save Dates to Calendar">
+        <span class="dock-action-icon">📅</span>
+        <span class="dock-action-text">Save Date</span>
+      </button>
+
+      <!-- Directions Button -->
+      <button class="dock-action-btn" id="dockDirectionsBtn" aria-label="Get Directions to All Venues">
+        <span class="dock-action-icon">📍</span>
+        <span class="dock-action-text">Directions</span>
+      </button>
+
+      <!-- Bless / Shower Akshatas Button -->
+      <button class="dock-action-btn" id="dockShowerBtn" aria-label="Shower Sacred Akshatas and Petals">
+        <span class="dock-action-icon">🌸</span>
+        <span class="dock-action-text">Bless</span>
+      </button>
+
+      <!-- Music Toggle Pill -->
+      <button class="dock-action-btn" id="dockMusicBtn" aria-label="Music Toggle">
+        <span class="dock-action-icon" id="dockMusicIcon">🎵</span>
+        <span class="dock-action-text" id="dockMusicLabel">Music</span>
+      </button>
+    </aside>
+
+  </div>
+
+  <!-- =========================================================================
+       DIRECTIONS MODAL (ALL 3 VENUES)
+       ========================================================================= -->
+  <div class="emerald-modal" id="directionsModal" role="dialog" aria-modal="true" aria-label="Select Venue Directions"
+    hidden>
+    <div class="emerald-modal-backdrop" id="directionsBackdrop"></div>
+    <div class="emerald-modal-dialog">
+      <div class="dialog-top-bar">
+        <span class="dialog-icon">📍</span>
+        <h3>Celebration Venue Directions</h3>
+        <button class="dialog-close-x" id="closeDirectionsBtn" aria-label="Close directions modal">&times;</button>
+      </div>
+      <p class="dialog-subhead">Select an auspicious celebration to view Google Maps directions:</p>
+
+      <div class="venues-interactive-list">
+        <!-- 1. Ambica Sea Green (Haldi & Sangeeth) -->
+        <a href="https://maps.app.goo.gl/HKqPGgwte3YvETWB6" target="_blank" rel="noopener"
+          class="venue-modal-card haldi-venue-card">
+          <div class="card-venue-icon">🌊</div>
+          <div class="card-venue-text">
+            <strong>Haldi &amp; Sangeeth</strong>
+            <span class="v-place">Ambica Sea Green, Beach Road, Visakhapatnam</span>
+            <small class="v-timing">Thursday, 19 Nov 2026 &middot; Morning &amp; Evening</small>
+          </div>
+          <span class="card-venue-arrow">↗</span>
+        </a>
+
+        <!-- 2. TTD Kalyana Mandapam (Subha Vivaham) -->
+        <a href="https://www.google.com/maps/search/?api=1&query=TTD+Kalyana+Mandapam+MVP+Colony+Visakhapatnam"
+          target="_blank" rel="noopener" class="venue-modal-card vivaham-venue-card">
+          <div class="card-venue-icon">🛕</div>
+          <div class="card-venue-text">
+            <strong>Subha Vivaham (Muhurtham)</strong>
+            <span class="v-place">TTD Kalyana Mandapam, MVP Colony, Visakhapatnam</span>
+            <small class="v-timing">Friday, 20 Nov 2026 &middot; 9:53 PM</small>
+          </div>
+          <span class="card-venue-arrow">↗</span>
+        </a>
+
+        <!-- 3. Sri Sai Krishna Mandir (Vratham & Lunch) -->
+        <a href="https://maps.app.goo.gl/oMhQ2octoprPrzRn9" target="_blank" rel="noopener"
+          class="venue-modal-card vratham-venue-card">
+          <div class="card-venue-icon">🍃</div>
+          <div class="card-venue-text">
+            <strong>Vratham &amp; Festive Wedding Lunch</strong>
+            <span class="v-place">Sri Sai Krishna Mandir, Alcot Gardens, Rajahmundry</span>
+            <small class="v-timing">Sunday, 22 Nov 2026 &middot; Morning Pooja &amp; Lunch</small>
+          </div>
+          <span class="card-venue-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SAVE DATE MODAL (CALENDAR DOWNLOAD / OPTIONS)
+       ========================================================================= -->
+  <div class="emerald-modal" id="saveDateModal" role="dialog" aria-modal="true" aria-label="Save Dates to Calendar"
+    hidden>
+    <div class="emerald-modal-backdrop" id="saveDateBackdrop"></div>
+    <div class="emerald-modal-dialog">
+      <div class="dialog-top-bar">
+        <span class="dialog-icon">📅</span>
+        <h3>Save Auspicious Dates</h3>
+        <button class="dialog-close-x" id="closeSaveDateBtn" aria-label="Close save date modal">&times;</button>
+      </div>
+      <p class="dialog-subhead">Download calendar invites (.ics) for Apple, Google, or Outlook calendars:</p>
+
+      <div class="venues-interactive-list">
+        <!-- Download All 3 Events -->
+        <button class="venue-modal-card master-cal-card" id="calDownloadAllBtn">
+          <div class="card-venue-icon">🌟</div>
+          <div class="card-venue-text">
+            <strong>Download Complete Schedule (.ics)</strong>
+            <span class="v-place">All 3 Celebrations (Haldi, Sangeeth, Vivaham &amp; Vratham)</span>
+          </div>
+          <span class="card-venue-arrow">📥</span>
+        </button>
+
+        <!-- Download Haldi & Sangeeth -->
+        <button class="venue-modal-card haldi-venue-card" id="calDownloadHaldiBtn">
+          <div class="card-venue-icon">🌼</div>
+          <div class="card-venue-text">
+            <strong>Haldi &amp; Sangeeth Only</strong>
+            <span class="v-place">Thursday, 19 Nov 2026 &middot; Ambica Sea Green, Vizag</span>
+          </div>
+          <span class="card-venue-arrow">📥</span>
+        </button>
+
+        <!-- Download Muhurtham Only -->
+        <button class="venue-modal-card vivaham-venue-card" id="calDownloadMuhurthamBtn">
+          <div class="card-venue-icon">🪔</div>
+          <div class="card-venue-text">
+            <strong>Subha Vivaham Muhurtham Only</strong>
+            <span class="v-place">Friday, 20 Nov 2026 at 9:53 PM &middot; TTD Kalyana Mandapam</span>
+          </div>
+          <span class="card-venue-arrow">📥</span>
+        </button>
+
+        <!-- Download Vratham & Lunch -->
+        <button class="venue-modal-card vratham-venue-card" id="calDownloadVrathamBtn">
+          <div class="card-venue-icon">🍃</div>
+          <div class="card-venue-text">
+            <strong>Vratham &amp; Festive Wedding Lunch Only</strong>
+            <span class="v-place">Sunday, 22 Nov 2026 &middot; Sri Sai Krishna Mandir, Rajahmundry</span>
+          </div>
+          <span class="card-venue-arrow">📥</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
