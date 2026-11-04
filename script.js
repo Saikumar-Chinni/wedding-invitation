@@ -516,16 +516,16 @@
     'END:VEVENT'
   ].join('\r\n');
 
-  // 3. Vratham & Wedding Lunch ICS
+  // 3. Reception & Wedding Lunch ICS
   const VRATHAM_ICS_BLOCK = [
     'BEGIN:VEVENT',
     'UID:saikumar-rohini-vratham-lunch-20261122@subhavivaham.in',
     'DTSTAMP:20261025T000000Z',
     'DTSTART:20261122T040000Z', // 9:30 AM IST = 04:00 UTC
     'DTEND:20261122T093000Z',   // 3:00 PM IST = 09:30 UTC
-    'SUMMARY:Sri Satyanarayana Swamy Vratham & Festive Wedding Lunch (Saikumar & Rohini)',
-    'LOCATION:Sri Sai Krishna Mandir, 2-60-5, Sambhu Nagar, Alcot Gardens, Rajamahendravaram, Andhra Pradesh 533101',
-    'DESCRIPTION:Auspicious Sri Satyanarayana Swamy Vratham Pooja followed by Festive Wedding Lunch / Traditional Kalyana Bhojanam (Mahaprasadam).\\nVenue: Sri Sai Krishna Mandir, Rajahmundry.\\nGoogle Maps: https://maps.app.goo.gl/oMhQ2octoprPrzRn9',
+    'SUMMARY:Grand Reception & Festive Wedding Lunch (Saikumar & Rohini)',
+    'LOCATION:Sri Narasimha Raju Function Hall, D.no:4-361-1, Balajipeta, Bommuru - Kesavaram Rd, Navabharat Nagar, Kotta Bommuru, Andhra Pradesh 533124',
+    'DESCRIPTION:Grand Reception followed by Festive Wedding Lunch / Traditional Kalyana Bhojanam.\\nVenue: Sri Narasimha Raju Function Hall, Kotta Bommuru, Rajahmundry.\\nGoogle Maps: https://maps.app.goo.gl/VM1ntwEqhkdFkQv89',
     'STATUS:CONFIRMED',
     'END:VEVENT'
   ].join('\r\n');
@@ -579,7 +579,7 @@
 
   if (calDownloadVrathamBtn) {
     calDownloadVrathamBtn.addEventListener('click', () => {
-      downloadIcs('Vratham-and-Wedding-Lunch-Saikumar-Rohini.ics', getSingleEventIcs(VRATHAM_ICS_BLOCK));
+      downloadIcs('Reception-and-Wedding-Lunch-Saikumar-Rohini.ics', getSingleEventIcs(VRATHAM_ICS_BLOCK));
       closeSaveDate();
     });
   }
@@ -598,7 +598,7 @@
 
   if (calendarVrathamBtn) {
     calendarVrathamBtn.addEventListener('click', () => {
-      downloadIcs('Vratham-and-Wedding-Lunch-Saikumar-Rohini.ics', getSingleEventIcs(VRATHAM_ICS_BLOCK));
+      downloadIcs('Reception-and-Wedding-Lunch-Saikumar-Rohini.ics', getSingleEventIcs(VRATHAM_ICS_BLOCK));
     });
   }
 

@@ -810,7 +810,7 @@ button {
 }
 
 /* ==========================================================================
-   EVENT CARDS (HALDI/SANGEETH, SUBHA VIVAHAM, VRATHAM & LUNCH)
+   EVENT CARDS (HALDI/SANGEETH, SUBHA VIVAHAM, RECEPTION & LUNCH)
    ========================================================================== */
 .celebration-event-card {
   position: relative;
@@ -850,7 +850,7 @@ button {
   color: #fff3b8;
 }
 
-.event-header-pill.vratham-pill {
+.event-header-pill.reception-pill {
   background: linear-gradient(135deg, #15803d, #047857);
   color: #ecfdf5;
 }
